@@ -12,25 +12,25 @@
         android:layout_height="wrap_content"
         android:background="#F5F5F5"
         android:orientation="horizontal"
-        android:paddingLeft="20dp"
-        android:paddingTop="20dp">
+        android:paddingLeft="20dp">
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingTop="20dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/logoMathForClassmatest" />
+            android:src="@drawable/logo" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#F5F5F5"
-            android:orientation="vertical"
-            android:paddingTop="0dp">
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:paddingTop="10dp"
                 android:text="math"
                 android:textColor="#858585"
                 android:textSize="65dp" />
@@ -107,7 +107,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="15dp"
         android:gravity="center"
         android:text="© Tomáš Valenta - SummerCamp 2016 - CityU"
         android:textColor="#858585"
