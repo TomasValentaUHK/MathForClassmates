@@ -29,15 +29,17 @@
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingTop="10dp"
+                android:layout_height="90dp"
+                android:layout_marginBottom="0dp"
+                android:paddingTop="20dp"
                 android:text="math"
                 android:textColor="#858585"
                 android:textSize="65dp" />
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
+                android:paddingTop="5dp"
                 android:text="for classmatest"
                 android:textColor="#858585"
                 android:textSize="30dp" />
@@ -67,8 +69,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:background="#05B8D1"
-            android:onClick="book"
-            android:text="BOOK"
+            android:onClick="books"
+            android:text="BOOKS"
             android:textColor="#F5F5F5"
             android:textSize="35dp" />
 

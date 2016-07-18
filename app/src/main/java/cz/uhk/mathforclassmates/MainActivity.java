@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void book(View view) {
+    public void books(View view) {
         Intent intent = new Intent(this, BookActivity.class);
         startActivity(intent);
     }
