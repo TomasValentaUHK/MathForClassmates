@@ -1,12 +1,414 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="cz.uhk.mathforclassmates.EShopActivity">
+    android:layout_height="match_parent">
 
-</RelativeLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F5F5F5"
+        android:orientation="vertical"
+        tools:context="cz.uhk.mathforclassmates.EShopActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F5F5F5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="0dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="NAME OF THE BOOK"
+                android:textColor="#858585"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="QUANTITY"
+                android:textColor="#858585"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="PRICE"
+                android:textColor="#858585"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="#858585"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="0dp"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="SB Review &amp; Basic knowledge"
+                android:textColor="#F5F5F5"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/quantity1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="0"
+                android:textColor="#F5F5F5"
+                android:textSize="15dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#858585"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#F0E209"
+                    android:onClick="pricePlus1"
+                    android:text="+"
+                    android:textColor="#858585"
+                    android:textSize="15dp" />
+
+                <Button
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="#F0E209"
+                    android:onClick="priceMinus1"
+                    android:text="-"
+                    android:textColor="#858585"
+                    android:textSize="25dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="$70"
+                android:textColor="#F5F5F5"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="#858585"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="0dp"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="WB Review &amp; Basic knowledge"
+                android:textColor="#F5F5F5"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/quantity2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="0"
+                android:textColor="#F5F5F5"
+                android:textSize="15dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#858585"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#F0E209"
+                    android:onClick="pricePlus2"
+                    android:text="+"
+                    android:textColor="#858585"
+                    android:textSize="15dp" />
+
+                <Button
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="#F0E209"
+                    android:onClick="priceMinus2"
+                    android:text="-"
+                    android:textColor="#858585"
+                    android:textSize="25dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="$35"
+                android:textColor="#F5F5F5"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="#858585"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="0dp"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="SB Equations &amp; inequations"
+                android:textColor="#F5F5F5"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/quantity3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="0"
+                android:textColor="#F5F5F5"
+                android:textSize="15dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#858585"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#F0E209"
+                    android:onClick="pricePlus3"
+                    android:text="+"
+                    android:textColor="#858585"
+                    android:textSize="15dp" />
+
+                <Button
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="#F0E209"
+                    android:onClick="priceMinus3"
+                    android:text="-"
+                    android:textColor="#858585"
+                    android:textSize="25dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="$70"
+                android:textColor="#F5F5F5"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="#858585"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="0dp"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="WB Equations &amp; inequations"
+                android:textColor="#F5F5F5"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/quantity4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="0"
+                android:textColor="#F5F5F5"
+                android:textSize="15dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#858585"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#F0E209"
+                    android:onClick="pricePlus4"
+                    android:text="+"
+                    android:textColor="#858585"
+                    android:textSize="15dp" />
+
+                <Button
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="#F0E209"
+                    android:onClick="priceMinus4"
+                    android:text="-"
+                    android:textColor="#858585"
+                    android:textSize="25dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="$35"
+                android:textColor="#F5F5F5"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="#F0E209"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="FINAL PRICE:"
+                android:textColor="#858585"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/finalPrice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="$0"
+                android:textColor="#858585"
+                android:textSize="25dp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/cut1b" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/cut2b" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/cut1b" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/cut2b" />
+
+        <Button
+            android:id="@+id/buttonOrder"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#1EB2CC"
+            android:onClick="submitOrder"
+            android:padding="5dp"
+            android:text="ORDER"
+            android:textColor="#F5F5F5"
+            android:textSize="25dp" />
+
+    </LinearLayout>
+</ScrollView>
