@@ -28,7 +28,7 @@
             android:label="ABOUT US" />
         <activity
             android:name=".ContactActivity"
-            android:label="CONTACT" />
+            android:label="CONTACTS" />
         <activity
             android:name=".EShopActivity"
             android:label="E-SHOP"></activity>
