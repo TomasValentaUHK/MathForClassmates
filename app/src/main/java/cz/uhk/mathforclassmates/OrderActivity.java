@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.text.NumberFormat;
+
 public class OrderActivity extends AppCompatActivity {
 
     @Override
@@ -76,7 +78,7 @@ public class OrderActivity extends AppCompatActivity {
 
             TextView finalPriceTV = (TextView) findViewById(
                     R.id.finalPrice);
-            finalPriceTV.setText("$ " + finalPrice);
+            finalPriceTV.setText(NumberFormat.getCurrencyInstance().format(finalPrice));
 
         }
     }
