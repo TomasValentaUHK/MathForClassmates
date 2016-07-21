@@ -11,6 +11,14 @@
         android:orientation="vertical"
         tools:context="cz.uhk.mathforclassmates.IntroductionActivity">
 
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:layout_gravity="center"
+            android:padding="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/cut2b" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -21,10 +29,11 @@
             android:textSize="20dp" />
 
         <ImageView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="18dp"
             android:layout_gravity="center"
             android:padding="0dp"
+            android:scaleType="fitXY"
             android:src="@drawable/cut1b" />
 
         <LinearLayout
@@ -50,10 +59,11 @@
         </LinearLayout>
 
         <ImageView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="18dp"
             android:layout_gravity="center"
             android:padding="0dp"
+            android:scaleType="fitXY"
             android:src="@drawable/cut2b" />
 
         <TextView
@@ -73,16 +83,9 @@
             android:padding="5dp"
             android:text="CLICK"
             android:textColor="#858585"
-            android:textSize="25dp" />
+            android:background="#F0E209"
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:gravity="center"
-            android:padding="5dp"
-            android:text="© Tomáš Valenta - SummerCamp 2016 - CityU"
-            android:textColor="#858585"
-            android:textSize="15dp" />
+            android:textSize="25dp" />
 
     </LinearLayout>
 </ScrollView>

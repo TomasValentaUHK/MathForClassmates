@@ -1,10 +1,13 @@
 package cz.uhk.mathforclassmates;
 
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.AttributeSet;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -16,6 +19,7 @@ public class EShopActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_eshop);
+
     }
 
     int PriceSB = 70;
@@ -126,12 +130,19 @@ public class EShopActivity extends AppCompatActivity {
         priceTextView.setText(NumberFormat.getCurrencyInstance().format(number));
     }
 
-    public void submitOrder(View view){
+    public void submitOrder(View view) {
         Button buttonOrder = (Button) findViewById(
                 R.id.buttonOrder);
 
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException ex) {
+            Thread.currentThread().interrupt();
+        }
+
         buttonOrder.setText("SUCCESSFUL");
-        buttonOrder.setBackgroundColor(Color.parseColor("#78A556"));
+        buttonOrder.setBackgroundColor(Color.parseColor("#F0E209"));
+        buttonOrder.setTextColor(Color.parseColor("#858585"));
         buttonOrder.setClickable(false);
     }
 }
