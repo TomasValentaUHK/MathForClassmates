@@ -372,12 +372,14 @@
                 android:textSize="15dp" />
 
             <EditText
+                android:id="@+id/idName"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_marginRight="25dp"
                 android:layout_weight="3"
                 android:gravity="center"
+                android:maxLength="10"
                 android:padding="10dp"
                 android:text=""
                 android:textColor="#858585"
@@ -404,12 +406,14 @@
                 android:textSize="15dp" />
 
             <EditText
+                android:id="@+id/idSurname"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_marginRight="25dp"
                 android:layout_weight="3"
                 android:gravity="center"
+                android:maxLength="10"
                 android:padding="10dp"
                 android:text=""
                 android:textColor="#858585"
@@ -435,12 +439,14 @@
                 android:textSize="15dp" />
 
             <EditText
+                android:id="@+id/idEmail"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_marginRight="25dp"
                 android:layout_weight="3"
                 android:gravity="center"
+                android:maxLength="50"
                 android:padding="10dp"
                 android:text=""
                 android:textColor="#858585"
@@ -467,12 +473,14 @@
                 android:textSize="15dp" />
 
             <EditText
+                android:id="@+id/idStreet"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_marginRight="25dp"
                 android:layout_weight="3"
                 android:gravity="center"
+                android:maxLength="15"
                 android:padding="10dp"
                 android:text=""
                 android:textColor="#858585"
@@ -499,12 +507,14 @@
                 android:textSize="15dp" />
 
             <EditText
+                android:id="@+id/idCity"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_marginRight="25dp"
                 android:layout_weight="3"
                 android:gravity="center"
+                android:maxLength="15"
                 android:padding="10dp"
                 android:text=""
                 android:textColor="#858585"
@@ -531,18 +541,32 @@
                 android:textSize="15dp" />
 
             <EditText
+                android:id="@+id/idZIP"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_marginRight="25dp"
                 android:layout_weight="3"
                 android:gravity="center"
+                android:inputType="number"
+                android:maxLength="5"
                 android:padding="10dp"
                 android:text=""
                 android:textColor="#858585"
                 android:textSize="15dp" />
 
         </LinearLayout>
+
+        <Button
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="#1EB2CC"
+            android:onClick="openOrder"
+            android:text="NEXT"
+            android:textColor="#F5F5F5"
+            android:textSize="25dp" />
 
         <ImageView
             android:layout_width="match_parent"
@@ -551,24 +575,10 @@
             android:scaleType="fitXY"
             android:src="@drawable/cut1b" />
 
-        <ImageView
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="18dp"
-            android:layout_gravity="center"
-            android:scaleType="fitXY"
-            android:src="@drawable/cut2b" />
-
-        <Button
-            android:id="@+id/buttonOrder"
-            android:layout_width="175dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:background="#1EB2CC"
-            android:onClick="submitOrder"
-            android:layout_marginBottom="10dp"
-            android:text="ORDER"
-            android:textColor="#F5F5F5"
-            android:textSize="25dp"/>
+            android:layout_height="match_parent"
+            android:background="#1EB2CC" />
 
     </LinearLayout>
 </ScrollView>

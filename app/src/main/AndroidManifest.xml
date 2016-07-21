@@ -31,7 +31,11 @@
             android:label="CONTACTS" />
         <activity
             android:name=".EShopActivity"
-            android:label="E-SHOP"></activity>
+            android:label="E-SHOP"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".OrderActivity"
+            android:label="ORDER SUMMARY"></activity>
     </application>
 
 </manifest>

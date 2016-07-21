@@ -1,14 +1,10 @@
 package cz.uhk.mathforclassmates;
 
-import android.app.ProgressDialog;
-import android.content.Context;
-import android.graphics.Color;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.AttributeSet;
 import android.view.View;
-import android.view.inputmethod.InputMethodManager;
-import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import java.text.NumberFormat;
@@ -19,7 +15,6 @@ public class EShopActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_eshop);
-
     }
 
     int PriceSB = 70;
@@ -130,20 +125,36 @@ public class EShopActivity extends AppCompatActivity {
         priceTextView.setText(NumberFormat.getCurrencyInstance().format(number));
     }
 
-    public void submitOrder(View view) {
-        Button buttonOrder = (Button) findViewById(
-                R.id.buttonOrder);
+    public void openOrder(View view) {
+        Intent intent = new Intent(this, OrderActivity.class);
+        intent.putExtra("PriceSB", PriceSB);
+        intent.putExtra("PriceWB", PriceWB);
+        intent.putExtra("Quantity1", Quantity1);
+        intent.putExtra("Quantity2", Quantity2);
+        intent.putExtra("Quantity3", Quantity3);
+        intent.putExtra("Quantity4", Quantity4);
 
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException ex) {
-            Thread.currentThread().interrupt();
-        }
+        EditText name = (EditText) findViewById(
+                R.id.idName);
+        EditText surname = (EditText) findViewById(
+                R.id.idSurname);
+        EditText email = (EditText) findViewById(
+                R.id.idEmail);
+        EditText street = (EditText) findViewById(
+                R.id.idStreet);
+        EditText city = (EditText) findViewById(
+                R.id.idCity);
+        EditText zip = (EditText) findViewById(
+                R.id.idZIP);
 
-        buttonOrder.setText("SUCCESSFUL");
-        buttonOrder.setBackgroundColor(Color.parseColor("#F0E209"));
-        buttonOrder.setTextColor(Color.parseColor("#858585"));
-        buttonOrder.setClickable(false);
+        intent.putExtra("name", name.getText().toString());
+        intent.putExtra("surname", surname.getText().toString());
+        intent.putExtra("email", email.getText().toString());
+        intent.putExtra("street", street.getText().toString());
+        intent.putExtra("city", city.getText().toString());
+        intent.putExtra("zip", zip.getText().toString());
+
+        startActivity(intent);
     }
 }
 

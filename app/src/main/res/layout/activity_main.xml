@@ -12,6 +12,13 @@
         android:orientation="vertical"
         tools:context="cz.uhk.mathforclassmates.MainActivity">
 
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/cut2b" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -105,7 +112,7 @@
                 android:layout_marginTop="15dp"
                 android:background="#05B8D1"
                 android:onClick="contact"
-                android:text="CONTACT"
+                android:text="CONTACTS"
                 android:textColor="#F5F5F5"
                 android:textSize="35dp" />
 
@@ -121,5 +128,17 @@
             android:text="© Tomáš Valenta - SummerCamp 2016 - CityU"
             android:textColor="#858585"
             android:textSize="15dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/cut1b" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#1EB2CC"/>
     </LinearLayout>
 </ScrollView>

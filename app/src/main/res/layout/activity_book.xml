@@ -135,7 +135,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="fill_horizontal"
                 android:padding="0dp"
-                android:text="Equations &amp; inequations"
+                android:text="Equations &amp; Inequations"
                 android:textColor="#F5F5F5"
                 android:textSize="20dp" />
 
@@ -186,7 +186,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="fill_horizontal"
                 android:padding="0dp"
-                android:text="Equations &amp; inequations"
+                android:text="Equations &amp; Inequations"
                 android:textColor="#F5F5F5"
                 android:textSize="20dp" />
 
@@ -265,6 +265,11 @@
             android:padding="0dp"
             android:scaleType="fitXY"
             android:src="@drawable/cut1b" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#1EB2CC"/>
 
     </LinearLayout>
 </ScrollView>
